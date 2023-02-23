@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal Website</title>
+    <meta name="author" content="AndrewKZhang">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Personal Website</h1>
+    </header>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="pic.JPG" alt="a picture of me" style="width: 800px;height:600px;display: block;margin-left: auto;margin-right: auto;">
+      <p>Hi, I'm Andrew Zhang(he/him) and I'm an undergraduate student at UC Berkeley. During my free time, I enjoy listening to music, watching films, cooking and taking care of plants! And I'm passionate about coding.</p>
+    </section>
+    
+    <section id="work">
+      <h2>My Work</h2>
+      <div class="work-container">
+        <div class="work-item">
+          <h3>NumC</h3>
+          <p>A simplified version of numpy, written in C, that uses different optimization techniques, such as SIMD (data-level parallelism), OpenMP (thread-level parallelism), loop unrolling, and cache blocking, to achieve better performance</p>
+        </div>
+        <div class="work-item">
+          <h3>Gitlet</h3>
+          <p>A version control system, written in Java, which mimics some of the basic features of Git, as well as some additional features (init, add, commit, rm, log, global-log, find, status, checkout, branch, rm-branch, reset, merge, add-remote, rm-remote, push, fetch, and pull)</p>
+        </div>
+        <div class="work-item">
+          <h3>User Program</h3>
+          <p>Currently working on it ;)</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at:</p>
+      <ul>
+        <li>Email: andrewkzhang@berkeley.edu</li>
+        <li>Phone: (341)766-8058</li>
+      </ul>
+      <p>You can also find me on:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/andrewkzhang/" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/AndrewKZhang" target="_blank">GitHub</a></li>
+      </ul>
+
+      <form>
+        <label for="fun-input">Enter Your Name:</label>
+        <input type="text" id="fun-input">
+        <button type="submit" onclick="sayHello()">Say Hello!</button>
+      </form>
+    </section>
+
+    
+    <script>
+      function sayHello() {
+        const name = document.getElementById("fun-input").value;
+        document.getElementById("fun-output").textContent = "Hello, " + name + "!";
+      }
+    </script>
+  </body>
+</html>

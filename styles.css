@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d1d28;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #fff;
+}
+
+header {
+    background-color: #191926;
+    padding: 40px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+section {
+    padding: 50px;
+    border-top: 1px solid #2c2c3d;
+}
+
+section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section ul li a:hover {
+    color: #ff4d4d;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #252541;
+    box-shadow: 0 2px 2px #2c2c3d;
+}
+
+.work-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.work-item h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.work-item p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+#fun {
+    background-color: #191926;
+    text-align: center;
+    padding: 50px;
+}
+
+#fun-input {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #191926;
+    border: none;
+    border-radius: 5px;
+}
+
+#fun-output {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #191926;
+}
+
+@media (max-width: 768px) {
+    .work-item {
+        flex: 1 1 100%;
+    }
+}
